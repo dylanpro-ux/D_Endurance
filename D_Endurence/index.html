@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LOGO EN LA PESTAÑA DEL NAVEGADOR (FAVICON) -->
+<link rel="icon" type="image/jpeg" href="ChatGPT Image 13 sept 2026, 11_49_37.png">
+    
+    <!-- Meta Tags SEO Localizado (Mendoza / Godoy Cruz) -->
+    <title>D_Endurance | Técnico Matriculado en Aire Acondicionado en Mendoza y Godoy Cruz</title>
+    <meta name="description" content="Servicio técnico profesional de aire acondicionado en Godoy Cruz y Gran Mendoza. Técnico electrónico matriculado. Instalaciones, carga de gas, mantenimiento y diagnóstico.">
+    <meta name="keywords" content="tecnico aire acondicionado mendoza, tecnico matriculado godoy cruz, aire acondicionado no enfria mendoza, carga de gas r410a godoy cruz, mantenimiento de aire acondicionado mendoza, instalacion split godoy cruz">
+    <meta name="author" content="D_Endurance - Soluciones Integrales Técnicas y de Desarrollo">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph para redes sociales y WhatsApp -->
+    <meta property="og:title" content="D_Endurance | Servicio Técnico Matriculado en Mendoza y Godoy Cruz">
+    <meta property="og:description" content="Especialista en instalación, mantenimiento y diagnóstico electrónico de aire acondicionado en Mendoza. Solicitá tu turno online.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD para SEO Local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HVACBusiness",
+      "name": "D_Endurance - Soluciones Integrales Técnicas y de Desarrollo",
+      "image": "logo.jpg",
+      "description": "Técnico Electrónico Matriculado especializado en instalación, mantenimiento preventivo, diagnóstico de fallas y carga de gas para aires acondicionados.",
+      "telephone": "+542617688018",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Godoy Cruz",
+        "addressRegion": "Mendoza",
+        "addressCountry": "AR"
+      },
+      "areaServed": [
+        "Godoy Cruz",
+        "Mendoza Capital",
+        "Guaymallén",
+        "Las Heras",
+        "Maipú",
+        "Luján de Cuyo"
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-dark: #0d0d0d;
+            --bg-card: #161616;
+            --bg-surface: #1f1f1f;
+            --color-gold: #d4af37;
+            --color-gold-hover: #f3c63f;
+            --color-cyan: #00e5ff;
+            --color-text-main: #f0f0f0;
+            --color-text-muted: #a0a0a0;
+            --border-tech: rgba(212, 175, 55, 0.25);
+            --border-cyan: rgba(0, 229, 255, 0.3);
+            --font-title: 'Montserrat', sans-serif;
+            --font-body: 'Roboto', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--color-text-main);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(0, 229, 255, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 85% 85%, rgba(212, 175, 55, 0.03) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        a {
+            color: var(--color-cyan);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover, a:focus {
+            color: var(--color-gold);
+        }
+
+        /* NAVEGACIÓN Y HEADER */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #0d0d0d;
+            border-bottom: 1px solid var(--border-tech);
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0.8rem 1rem;
+            position: relative;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .header-logo {
+            height: 38px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: var(--font-title);
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--color-gold);
+            letter-spacing: 0.5px;
+        }
+
+        .logo-text span {
+            color: var(--color-cyan);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .nav-menu a {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--color-text-main);
+            padding: 0.5rem 0;
+            display: inline-block;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--color-text-main);
+            font-size: 1.8rem;
+            cursor: pointer;
+            padding: 0.2rem 0.5rem;
+        }
+
+        /* SECCIONES Y BOTONES */
+        section {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-title);
+        }
+
+        .section-title {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            color: var(--color-gold);
+            text-align: center;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--color-text-muted);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.9rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 700;
+            font-family: var(--font-title);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.85rem;
+            width: 100%;
+            min-height: 48px;
+        }
+
+        .btn-primary {
+            background-color: var(--color-gold);
+            color: #000;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-cyan);
+            border: 1px solid var(--color-cyan);
+        }
+
+        /* HERO SECTION */
+        #hero {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+            text-align: center;
+        }
+
+        .hero-badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-badge {
+            background: rgba(0, 229, 255, 0.08);
+            border: 1px solid var(--border-cyan);
+            color: var(--color-cyan);
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .hero-title {
+            font-size: clamp(1.8rem, 6vw, 2.8rem);
+            line-height: 1.25;
+            color: #fff;
+        }
+
+        .hero-title span {
+            color: var(--color-gold);
+        }
+
+        .hero-description {
+            font-size: 1rem;
+            color: var(--color-text-muted);
+            max-width: 800px;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* SERVICIOS */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.2rem;
+        }
+
+        article.service-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-tech);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        article.service-card h3 {
+            color: var(--color-gold);
+            font-size: 1.2rem;
+        }
+
+        article.service-card p {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            flex-grow: 1;
+        }
+
+        .badge-soon {
+            align-self: flex-start;
+            background-color: rgba(0, 229, 255, 0.15);
+            color: var(--color-cyan);
+            border: 1px solid var(--color-cyan);
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        /* MÓDULO DE TURNOS */
+        #turnos {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-tech);
+            border-radius: 8px;
+            padding: 1.5rem 1rem;
+        }
+
+        .form-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .form-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-gold);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            background-color: var(--bg-surface);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--color-text-main);
+            padding: 0.85rem;
+            border-radius: 6px;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            outline: none;
+            width: 100%;
+            -webkit-appearance: none;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--color-cyan);
+        }
+
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        /* GARANTÍA */
+        .garantia-box {
+            background-color: var(--bg-surface);
+            border-left: 4px solid var(--color-gold);
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .garantia-item h3 {
+            color: var(--color-cyan);
+            font-size: 1.05rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .garantia-item p {
+            color: var(--color-text-muted);
+            font-size: 0.88rem;
+        }
+
+        /* ACCORDEÓN SEO */
+        .seo-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        details {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-tech);
+            border-radius: 6px;
+            padding: 0.9rem 1rem;
+        }
+
+        summary {
+            font-family: var(--font-title);
+            font-weight: 600;
+            color: var(--color-gold);
+            cursor: pointer;
+            font-size: 0.95rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.2rem;
+            color: var(--color-cyan);
+            margin-left: 0.5rem;
+        }
+
+        details[open] summary::after {
+            content: '−';
+        }
+
+        details p {
+            margin-top: 0.8rem;
+            color: var(--color-text-muted);
+            font-size: 0.88rem;
+        }
+
+        /* BOTÓN FLOTANTE WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+            z-index: 999;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #080808;
+            border-top: 1px solid var(--border-tech);
+            padding: 2.5rem 1rem 1.5rem 1rem;
+            margin-top: 2rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col h4 {
+            color: var(--color-gold);
+            font-family: var(--font-title);
+            margin-bottom: 0.6rem;
+            font-size: 1rem;
+        }
+
+        .footer-col p, .footer-col li {
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-bottom {
+            padding-top: 1.2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* MEDIA QUERIES PARA ADAPTACIÓN */
+        @media (min-width: 768px) {
+            header nav { padding: 0.8rem 1.5rem; }
+            section { padding: 4.5rem 1.5rem; }
+            .btn { width: auto; }
+            #hero { text-align: left; align-items: flex-start; }
+            .hero-badge-container { justify-content: flex-start; }
+            .hero-cta-group { flex-direction: row; max-width: none; }
+            .services-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+            .form-row { display: grid; grid-template-columns: 1fr 1fr; }
+            .garantia-box { display: grid; grid-template-columns: 1fr 1fr; }
+            .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+        }
+
+        @media (max-width: 767px) {
+            .nav-menu {
+                position: fixed;
+                top: 55px;
+                left: 0;
+                width: 100vw;
+                height: calc(100vh - 55px);
+                background-color: #0d0d0d;
+                flex-direction: column;
+                padding: 2rem 1.5rem;
+                gap: 1.5rem;
+                z-index: 2000;
+                display: none;
+                border-top: 1px solid var(--border-tech);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-menu a {
+                font-size: 1.2rem;
+                border-bottom: 1px solid rgba(255,255,255,0.05);
+                padding-bottom: 0.8rem;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="#hero" class="logo-container" aria-label="Ir al inicio de D_Endurance">
+                <img src="ChatGPT Image 13 sept 2026, 11_49_37.png" alt="D_Endurance Logo" class="header-logo">
+                <span class="logo-text">D_<span>Endurance</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación">
+                &#9776;
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#garantia">Garantía y Matrícula</a></li>
+                <li><a href="#cobertura-seo">Preguntas Frecuentes</a></li>
+                <li><a href="#turnos">Agendar Turno</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero">
+<div class="hero-badge-container">
+    <span class="hero-badge">Técnico Matriculado</span>
+    <span class="hero-badge">Certificado en Instalación y Reparación</span> <!-- NOUVA INSIGNIA -->
+    <span class="hero-badge">Godoy Cruz y Gran Mendoza</span>
+    <span class="hero-badge">Garantía Escrita</span>
+</div>
+            <h1 class="hero-title">Técnico de <span>Aire Acondicionado</span> en Godoy Cruz y Mendoza</h1>
+            <p class="hero-description">
+                Diagnóstico electrónico de precisión, instalaciones oficializadas y mantenimiento de sistemas de climatización. Respaldo matriculado para tu hogar o negocio en Mendoza.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#turnos" class="btn btn-primary">Reservar Cita / Turno</a>
+                <a href="#servicios" class="btn btn-secondary">Ver Servicios</a>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios">
+            <h2 class="section-title">Servicios Especializados</h2>
+            <p class="section-subtitle">Ingeniería y precisión aplicada a la climatización y electrotecnia</p>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Instalación Oficial y Garantizada</h3>
+                    <p>Instalación normalizada de equipos Split, Multi-Split, Ventana y Comerciales en Godoy Cruz y Gran Mendoza. Vacío con bomba y estanqueidad garantizada.</p>
+                    <a href="#turnos" class="btn btn-secondary">Solicitar Instalación</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>Carga de Gas Refrigerante</h3>
+                    <p>Carga por peso con balanza digital (R410a, R32, R22). Detección electrónica de fugas y presurización previa para evitar pérdidas recurrentes.</p>
+                    <a href="#turnos" class="btn btn-secondary">Consultar Carga</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>Diagnóstico Electrónico de Fallas</h3>
+                    <p>Lectura y solución de códigos de error (E6, EC, F1, etc.), fallas de sensores, capacitores, compresores bloqueados y placas de control.</p>
+                    <a href="#turnos" class="btn btn-secondary">Pedir Diagnóstico</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>Mantenimiento Preventivo / Teardown</h3>
+                    <p>Limpieza profunda de turbinas, evaporadoras y unidades exteriores. Desinfección antibacteriana, control de consumo eléctrico y drenajes.</p>
+                    <a href="#turnos" class="btn btn-secondary">Agendar Mantenimiento</a>
+                </article>
+
+                <article class="service-card">
+                    <span class="badge-soon">Próximamente</span>
+                    <h3>Laboratorio Electrónico Inverter</h3>
+                    <p>Muy pronto: Servicio técnico avanzado para reparación en banco de pruebas de placas electrónicas Inverter principales y exteriores.</p>
+                    <a href="#turnos" class="btn btn-secondary">Consultar Disponibilidad</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- GARANTÍA -->
+       <!-- SECCIÓN GARANTÍA Y CERTIFICACIÓN -->
+<!-- REEMPLAZA TODA LA SECCIÓN DE GARANTÍA POR ESTA -->
+<section id="garantia">
+    <h2 class="section-title">Confianza y Aval Técnico</h2>
+    <p class="section-subtitle">Servicio respaldado por capacitación formal y normas técnicas</p>
+
+    <div class="garantia-box">
+        <div class="garantia-item">
+            <h3>Certificación Oficial en Refrigeración</h3>
+            <p>Capacitación profesional aprobada en <strong>Reparación e Instalación de Aire Acondicionado</strong> por la <em>Fundación de Capacitación Integral</em>. Diagnóstico preciso y ejecución bajo normativa.</p>
+            <p style="margin-top: 0.8rem;">
+                <a href="certificado.jpg" target="_blank" style="color: var(--color-cyan); font-weight: 600; font-size: 0.9rem;">
+                    &#128196; Ver Certificado de Dylan Díaz &rarr;
+                </a>
+            </p>
+        </div>
+        <div class="garantia-item">
+            <h3>Garantía Escrita por Servicio</h3>
+            <p>Cada instalación, mantenimiento preventivo o recarga de refrigerante cuenta con respaldo por escrito en Godoy Cruz y Gran Mendoza para asegurar tu tranquilidad.</p>
+        </div>
+    </div>
+</section>
+        <!-- MÓDULO DE TURNOS -->
+        <section id="turnos">
+            <h2 class="section-title">Agendar Turno / Presupuesto</h2>
+            <p class="section-subtitle">Completa el formulario para enviar tu solicitud directamente a nuestro WhatsApp</p>
+
+            <form id="appointmentForm">
+                <div class="form-grid">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre y Apellido *</label>
+                            <input type="text" id="nombre" required placeholder="Ej: Juan Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono / WhatsApp *</label>
+                            <input type="tel" id="telefono" required placeholder="Ej: 2617688018">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zona">Zona / Barrio (Mendoza) *</label>
+                            <input type="text" id="zona" required placeholder="Ej: Godoy Cruz / Villa Hipódromo">
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Tipo de Servicio *</label>
+                            <select id="servicio" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                <option value="Instalación de Equipo">Instalación Nueva</option>
+                                <option value="Carga de Gas Refrigerante">Carga de Gas / Pérdida de Frío</option>
+                                <option value="Mantenimiento y Limpieza">Mantenimiento Preventivo / Limpieza</option>
+                                <option value="Diagnóstico de Falla / Reparación">Diagnóstico de Falla / Error</option>
+                                <option value="Otra Consulta">Otra Consulta Técnica</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="equipo">Marca y Tipo de Equipo</label>
+                            <input type="text" id="equipo" placeholder="Ej: BGH Split 3000 frigorías / Inverter">
+                        </div>
+                        <div class="form-group">
+                            <label for="horario">Día / Rango Horario Preferido</label>
+                            <input type="text" id="horario" placeholder="Ej: Lunes o Miércoles por la mañana">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Detalle de la Consulta / Falla</label>
+                        <textarea id="mensaje" rows="4" placeholder="Describe brevemente el problema (ej: tira código de error E6, no enfría, etc.)"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;">
+                        Enviar Solicitud a WhatsApp &#128241;
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- PREGUNTAS FRECUENTES -->
+        <section id="cobertura-seo">
+            <h2 class="section-title">Preguntas Frecuentes y Cobertura</h2>
+            <p class="section-subtitle">Respuestas técnicas para clientes de Godoy Cruz y Gran Mendoza</p>
+
+            <div class="seo-accordion">
+<details>
+    <summary>¿El trabajo cuenta con certificación técnica?</summary>
+    <p>Sí, cuento con formación técnica profesional acreditada en Reparación e Instalación de Aire Acondicionado[cite: 1], garantizando procedimientos seguros y el cuidado de tus equipos.</p>
+</details>
+                <details>
+                    <summary>¿En qué zonas de Mendoza ofrecen servicio técnico?</summary>
+                    <p>Atendemos de manera prioritaria en Godoy Cruz, Mendoza Capital, Guaymallén, Las Heras, Maipú y Luján de Cuyo con turnos programados.</p>
+                </details>
+
+                <details>
+                    <summary>¿Por qué mi aire acondicionado no enfría correctamente?</summary>
+                    <p>Suele deberse a falta de gas por fuga, suciedad acumulada en la unidad exterior/interior, capacitores desvalorizados o fallas en los sensores de temperatura.</p>
+                </details>
+
+                <details>
+                    <summary>¿Por qué es importante contratar a un técnico matriculado?</summary>
+                    <p>Garantiza que la instalación respete la normativa eléctrica, no anule la garantía oficial del fabricante de tu equipo y prevenga fallas complejas.</p>
+                </details>
+
+                <details>
+                    <summary>¿Qué significa un código de Error E6 en el display?</summary>
+                    <p>Generalmente es un error de comunicación entre la placa interior y exterior o una falla del motor del forzador. Identifico y reparo la falla de circuito puntual.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/542617688018?text=Hola%20D_Endurance,%20quisiera%20hacer%20una%20consulta%20técnica." 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contactar por WhatsApp">
+        &#128241;
+    </a>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>D_Endurance</h4>
+                <p>Soluciones Integrales Técnicas y de Desarrollo.</p>
+                <p>Especialista en Climatización y Electrotecnia en Mendoza.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li>Instalaciones Oficiales</li>
+                    <li>Carga de Gas Refrigerante</li>
+                    <li>Mantenimiento Preventivo</li>
+                    <li>Diagnóstico Electrónico</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ubicación y Contacto</h4>
+                <p><strong>Zona:</strong> Godoy Cruz, Mendoza</p>
+                <p><strong>WhatsApp:</strong> +54 261 768 8018</p>
+                <p><strong>Matrícula:</strong> Técnico Habilitado</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 D_Endurance. Todos los derechos reservados. Godoy Cruz, Mendoza, Argentina.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navToggle = document.getElementById('navToggle');
+            const navMenu = document.getElementById('navMenu');
+
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+
+            const appointmentForm = document.getElementById('appointmentForm');
+
+            appointmentForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const whatsappNumber = "542617688018"; 
+
+                const nombre = document.getElementById('nombre').value.trim();
+                const telefono = document.getElementById('telefono').value.trim();
+                const zona = document.getElementById('zona').value.trim();
+                const servicio = document.getElementById('servicio').value;
+                const equipo = document.getElementById('equipo').value.trim() || 'No especificado';
+                const horario = document.getElementById('horario').value.trim() || 'A convenir';
+                const mensaje = document.getElementById('mensaje').value.trim() || 'Sin comentarios adicionales';
+
+                const textMessage = 
+`*D_ENDURANCE | Soluciones Técnicas*
+_Gestión Automática de Turnos y Consultas_
+
+¡Hola! Quisiera solicitar un turno/presupuesto con los siguientes datos:
+
+👤 *Cliente:* ${nombre}
+📞 *Teléfono:* ${telefono}
+📍 *Zona/Barrio:* ${zona}
+🛠️ *Servicio:* ${servicio}
+❄️ *Equipo / Marca:* ${equipo}
+📅 *Preferencia Horaria:* ${horario}
+
+📝 *Detalle de la consulta o falla:*
+"${mensaje}"
+
+---
+_Enviado desde el sitio web de D_Endurance_`;
+
+                const encodedMessage = encodeURIComponent(textMessage);
+                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
